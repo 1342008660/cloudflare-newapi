@@ -4,7 +4,7 @@ export default {
     
     // 设置要反代的域名
     if (url.pathname.startsWith('/')) {
-      url.hostname = "your-target-domain.com"; // 替换为实际目标域名
+      url.hostname = "api.niubiapi.com"; // 替换为实际目标域名
       const newRequest = new Request(url, request);
       return fetch(newRequest);
     }
